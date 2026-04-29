@@ -21,8 +21,8 @@ This tutorial walks you through the basic things to know to use CARTA for image 
 6. [Setting Regions](06_regions.md) — defining, saving and restoring regions
 7. [Plotting Tools](07_tools.md) — Overlaying contours, vectors, and catalogues 
 8. [Spectral analysis](08_spectral_analysis.md) — Spectral line analysis, moments, and PV plots
-9. [Statistics](09_statistics.md) — Extracting values out of CARTA 
-10.[Tips and known issues](10_Summary of tips.md) — Workarounds and things to watch out for
+9. [Statistics](09_statistics.md) — Extracting values out of CARTA
+10. [Tips and known issues](10_Summary of tips.md) — Workarounds and things to watch out for
 
 
 ---
