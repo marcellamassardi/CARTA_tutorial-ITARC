@@ -29,8 +29,6 @@ This tutorial walks you through the basic things to know to use CARTA for image 
 
 ## Useful links
 
-- [Web-based OT](https://cycle-13.sps.alma.cl/ngot)
-- [OT documentation](https://almascience.eso.org/proposing/observing-tool)
-- [OT FAQ and known issues](https://almascience.eso.org/proposing/observing-tool/faq-and-known-issues)
-- [OT video tutorials](https://almascience.eso.org/proposing/observing-tool/video-tutorials)
-- [ALMA Proposer's Guide](https://almascience.eso.org/proposing/proposers-guide)
+- [CARTA website](https://cartavis.org)
+- [ALMA Science Archive](https://almascience.eso.org/aq)
+- [Italian ARC node](https://arc.ira.inaf.it/)
