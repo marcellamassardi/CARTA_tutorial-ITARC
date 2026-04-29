@@ -4,7 +4,7 @@ title: Home
 nav_order: 0
 ---
 
-# So, you would like to see nice images with CARTA, don't you?
+# Basics of navigating nice images with the CARTA viewer
 
 This is a basic tutorial on the CARTA image viewer [CARTA webpage](https://cartavis.org/) for the Italian community and users of the Italian ARC node.
 This tutorial walks you through the basic things to know to use CARTA for image management and scientific exploitation.
