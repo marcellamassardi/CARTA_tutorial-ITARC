@@ -4,7 +4,7 @@ title: Home
 nav_order: 0
 ---
 
-# Basics of navigating nice images with the CARTA viewer
+# Lost in Space (But Make It Data): Navigating Images with CARTA
 
 This is a basic tutorial on the CARTA image viewer [CARTA webpage](https://cartavis.org/) for the Italian community and users of the Italian ARC node.
 This tutorial walks you through the basic things to know to use CARTA for image management and scientific exploitation.
@@ -22,7 +22,7 @@ This tutorial walks you through the basic things to know to use CARTA for image 
 7. [Plotting Tools](07_tools.md) — Overlaying contours, vectors, and catalogues 
 8. [Spectral analysis](08_spectral_analysis.md) — Spectral line analysis, moments, and PV plots
 9. [Statistics](09_statistics.md) — Extracting values out of CARTA
-10. [Tips and known issues](10_Summary of tips.md) — Workarounds and things to watch out for
+10. [Tips and known issues](10_tips.md) — Workarounds and things to watch out for
 
 
 ---
