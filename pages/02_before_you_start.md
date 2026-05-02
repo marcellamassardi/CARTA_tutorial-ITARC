@@ -32,9 +32,9 @@ The client only needs
 ---
 
 
-## Which mode works better for me?
+# Which mode works better for me?
 
-# 🖥️ Local / Desktop Mode
+## 🖥️ Local / Desktop Mode
 
 In **local mode**, CARTA runs entirely on a personal machine:
 To operate in local mode the CARTA backend is available for Linux, macOS, and containerized environments
@@ -48,7 +48,7 @@ Installation resources and instructions are available here:
 
 Precompiled binaries and Docker images are commonly provided to simplify deployment.
 
-# How it works
+### How it works
 
 - The CARTA backend is launched locally.
 - The browser connects to `localhost`.
@@ -58,7 +58,7 @@ If CARTA is run locally on your own computer, the session data is saved to a loc
 Users can export regions to text files in CASA Region Text Format (.crtf) or DS9 (.reg) format.
 Images can be edited and saved in png or FITS formats. Note that saving in FITS format is available only for local mode.
 
-# Advantages
+### Advantages
 - Simple setup for small to medium datasets
 - No network dependency
 - Fast access to local files
@@ -77,7 +77,7 @@ In server mode, CARTA is deployed on a remote machine (e.g., cluster, institute 
 When using the CARTA server version (e.g., via the ALMA Science Archive), a carta-controller uses a MongoDB database on the remote server to record user data, including interface preferences, layout configurations, and workspaces.
 The backend (carta_backend) handles computations and stores data for visualization, ensuring that if you are connected to a shared server, your session data (regions/stats) remains available. Regions created for analysis are registered on the server and shared among spatially matched images.
 
-# Advantages
+### Advantages
 - Handles very large datasets efficiently
 - Centralized data storage
 - Suitable for multi-user environments
@@ -91,7 +91,7 @@ By accessing the Italian ARC cluster, users can have access to a minimum of 10TB
 CARTA is among the long list of software tools available on the ItARC cluster: this is similar to run in the above described "local mode" without installing it CARTA your machine (this is a nice solution for Windows users!!!).
 See [the ItARC-cluster webpage](https://arc.ira.inaf.it/support-and-tools/arc-cluster/) for more information.
 
-# To access CARTA on the ItARC cluster:
+### To access CARTA on the ItARC cluster:
 
 - Request an account to the Italian ARC node writing an email to help-desk@alma.inaf.it
 
@@ -125,7 +125,7 @@ Notice that CARTA will search images in the IRA repository folder. We suggest to
 
 CARTA can be used in combination with data from the ALMA Science Archive, enabling direct exploration of observational products without manual data handling. This exploits the server mode. 
 
-# To access CARTA on the ALMA Science Archive:
+### To access CARTA on the ALMA Science Archive:
 
 - Search and select a dataset in the ALMA Science Archive https://almascience.nrao.edu/aq/
 - Identify in the image previews or in the download panel the images that are of your interest
