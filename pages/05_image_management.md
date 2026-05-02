@@ -60,6 +60,8 @@ The image list panel shows the list of appended images. They can be selected to 
 By right-clicking on the image name we can select the image as reference (either spatially, spectrally or rendering). The corresponding letter (XY, Z or R) is framed in the matching column.
 By clicking on "XY" in the matching column of a non-reference image, it get spatially matched in the viewer to the spatial reference image. Similarly cubes can be aligned spectrally or in rendering (by clicking on the Z or R).
 
+![File Browser](../images/image_list_2.png)
+
 ---
 
 ## 💾 Exporting and Saving Images
@@ -76,6 +78,8 @@ Exporting as PNG allows to save the image as it appears in the image viewer pane
 - Selecte the resolution quality
 - The image is saved in your client browser download folder
 
+![Exporting to PNG](../images/exported_image.png)
+
 ---
 
 ### Save as FITS/CASA
@@ -86,6 +90,8 @@ Exporting as PNG allows to save the image as it appears in the image viewer pane
 - decide the output format between FITS or CASA
 
 Saving FITS file preserves scientific data and metadata. Saving allows the definition of regions and/or channels from cubes.  
+
+![FITS saving](../images/portion_image_saving.png)
 
 ---
 
@@ -115,6 +121,7 @@ Comparison is perforemed at screen rendering pixel level, which removes the limi
 Colors can be customized using the Render Configuration Widget that can be loaded via the FIle menu->Multi-Color blending.
 
 ![Blending](../images/multi_blending.png)
+
 *Figure: Blending of a P (cyan) and I (magenta) image of an AGN.
 ---
 
