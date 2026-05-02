@@ -113,8 +113,9 @@ Change your operation directory
 
 to your folder on the ARC cluster: this is the folder where you should put your image files (see details on [the ItARC-cluster webpage](https://arc.ira.inaf.it/support-and-tools/arc-cluster/)).
 
->>irainit load carta
->>carta
+>irainit load carta
+>
+>carta
 >[2026-05-02 10:03:52.979Z] [CARTA] [info] CARTA is accessible at http://192.168.49.26:3002/?token=af2e643f-c265-450f-8889-c11595890e2c
 
 gives you the URL that you can open in your browser to access CARTA.
