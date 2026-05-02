@@ -1,6 +1,6 @@
 ---
 layout: default
-title: What is CARTA and why should I use it?
+title: What is CARTA?
 nav_order: 1
 ---
 
@@ -64,12 +64,12 @@ This separation enables scalable workflows and efficient handling of large datas
 
 CARTA achieves real-time rendering by streaming only the required portions of image data from the backend to the browser and using GPU-accelerated techniques to dynamically update the display as the user pans, zooms, or analyzes the dataset. In this way, CARTA minimizes data transfer and offloads heavy rendering tasks to the GPU, allowing high-performance visualization directly in the browser.
 
+Furthermore, CARTA leverages CPU parallelization to efficiently process large datasets and source catalogues by distributing computations across multiple cores, ensuring fast and responsive analysis even for complex and high-volume astronomical data.
 
 ![GPU Rendering Diagram](../images/tile_rendering.png)
 
 *Figure: Illustration of CARTA’s tiled rendering workflow. Large astronomical images are preprocessed into multi-resolution tile pyramids on the server. Based on the user’s viewport (pan/zoom level), only the necessary tiles and resolution levels are requested and streamed to the client. These tiles are uploaded as textures to the GPU and composited in real time, enabling smooth, high-performance interaction with massive datasets while minimizing data transfer.*
 
-Furthermore, CARTA leverages CPU parallelization to efficiently process large datasets and source catalogues by distributing computations across multiple cores, ensuring fast and responsive analysis even for complex and high-volume astronomical data.
 ---
 
 ## 📂 Supported Data
@@ -78,7 +78,10 @@ CARTA supports a range of astronomical data formats, including:
 
 - **FITS images and cubes**
 - **CASA image formats** (via backend support)
-- **HDF5 format** using the IDIA schema (it also provides a command-line tool called fits2idia to convert FITS images into the required HDF5-IDIA format)
+- **HDF5 format** using the IDIA schema 
+
+{: .tip}
+CARTA also provides a command-line tool called fits2idia to convert FITS images into the required HDF5-IDIA format)
 
 This makes it suitable for data from:
 
@@ -121,5 +124,5 @@ These resources include:
 - Developer and API documentation  
 
 
-[Next: Choose the way to access CARTA →](02_before_to_start.md)
+[Next: Choose the way to access CARTA →](/pages02_before_to_start.md)
 
