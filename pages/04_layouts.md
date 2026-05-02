@@ -194,3 +194,6 @@ CARTA’s layout and preferences system provides a highly adaptable interface:
 Together, they enable users to build an efficient and tailored environment for exploring and analyzing astronomical data.
 ```
 
+
+
+[← Previous: Meeting the interface](03_interface.md) [Next: Image management→](05_image_management.md)

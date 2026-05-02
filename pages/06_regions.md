@@ -160,3 +160,5 @@ CARTA’s region system allows users to:
 Regions are essential for extracting meaningful scientific information from astronomical images and data cubes.
 ```
 
+
+[← Previous: Image Management](05_image_management.md) [Next: Guide on plotting Tools →](07_tools.md)

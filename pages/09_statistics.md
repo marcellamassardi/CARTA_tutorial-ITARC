@@ -186,3 +186,8 @@ The CARTA Statistics Widget enables users to:
 - 📐 Extract scientifically meaningful quantities  
 
 It is an essential tool for transforming visual data into quantitative insight in astronomical analysis.
+
+
+
+
+[← Previous: What you need for Spectral analysis ](08_spectral_analysis.md) [Next: Tips and Tricks →](10_tips.md)

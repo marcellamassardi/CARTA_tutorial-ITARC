@@ -191,3 +191,6 @@ CARTA’s plotting tools enable rich, multi-layered visualization:
 - 🌐 Online queries → integrate external data  
 
 These tools make CARTA a comprehensive environment for both visualization and scientific analysis of astronomical datasets.
+
+
+[← Previous: How to define Regions](06_regions.md) [Next: What you need for Spectral analysis →](08_spectral_analysis.md)

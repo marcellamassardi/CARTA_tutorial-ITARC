@@ -169,3 +169,7 @@ CARTA’s image management system allows users to:
 - ❌ Efficiently close and manage resources  
 
 This flexibility makes CARTA a powerful tool for handling complex astronomical datasets.
+
+
+
+[← Previous: Setting Layouts and Preferences](04_layouts.md) [Next: How to define Regions →](06_regions.md)

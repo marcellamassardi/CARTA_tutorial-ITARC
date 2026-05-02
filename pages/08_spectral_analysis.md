@@ -152,3 +152,6 @@ CARTA provides powerful tools for spectral cube analysis:
 These features enable detailed exploration of the physical and kinematic properties of astronomical sources directly within the viewer.
 ```
 
+
+
+[← Previous: Guide on plotting Tools](07_tools.md) [Next: Survival manual on the Statistics widget →](09_statistics.md)

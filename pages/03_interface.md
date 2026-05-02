@@ -158,3 +158,5 @@ The settings menu allows customization of the interface.
 The CARTA interface combines powerful visualization with interactive analysis tools in a clean, browser-based environment. Its modular design allows users to adapt the layout to their needs while maintaining fast and efficient workflows.
 
 Whether exploring a single image or analyzing complex spectral cubes, CARTA provides an intuitive and scalable interface for modern astronomy.
+
+[← Previous: Choose the way to access CARTA](02_before_you_start.md) [Next: Setting Layouts and Preferences →](04_layouts.md)
