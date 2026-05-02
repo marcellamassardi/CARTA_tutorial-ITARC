@@ -106,5 +106,7 @@ The usual gear button allows settings of the plot profiles, including smmothing,
 ---
 
 {: .tip}
+Notice that the button sequence Ctrl+ or Ctrl- allow to zoom in and out the size of characters, buttons and labels, but the size of the plots goes in the opposite direction. 
+
 
 [← Previous: Choose the way to access CARTA](02_before_you_start.md) [Next: Setting Layouts and Preferences →](04_layouts.md)
