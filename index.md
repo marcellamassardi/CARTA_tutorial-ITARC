@@ -14,15 +14,15 @@ This tutorial walks you through the basic things to know to use CARTA for image 
 ## Contents
 
 1. [Introduction](pages/01_introduction.md) — Overview of CARTA
-2. [Before you start](02_before_you_start.md) — What you need before access CARTA
-3. [Interface](pages/03_interface.md) — Navigating the CARTA interface
-4. [Layouts and preferences](pages/04_layouts.md) — Layouts and preferences for widgets
-5. [Image management](pages/05_image_management.md) — >Image management: open, append, close, save
-6. [Setting Regions](pages/06_regions.md) — defining, saving and restoring regions
-7. [Plotting Tools](pages/07_tools.md) — Overlaying contours, vectors, and catalogues 
-8. [Spectral analysis](pages/08_spectral_analysis.md) — Spectral line analysis, moments, and PV plots
-9. [Statistics](pages/09_statistics.md) — Extracting values out of CARTA
-10. [Tips and known issues](pages/10_tips.md) — Workarounds and things to watch out for
+2. [Before you start](pages/02_before_you_start.md) — Choose the way to access CARTA
+3. [Meeting the interface](pages/03_interface.md) — Meeting the initial CARTA interface
+4. [Setting Layouts and preferences](pages/04_layouts.md) — Setting Layouts and preferences for widgets
+5. [Image management](pages/05_image_management.md) — Image management: open, append, match, save, close
+6. [How to define Regions](pages/06_regions.md) — Defining, saving and restoring regions
+7. [Guide on plotting Tools](pages/07_tools.md) — Overlaying contours, vectors, and catalogues 
+8. [What you need for Spectral analysis](pages/08_spectral_analysis.md) — Spectral line analysis, moments, and PV plots
+9. [Survival manual on the Statistics widget](pages/09_statistics.md) — Extracting values out of CARTA
+10. [Tips and tricks ](pages/10_tips.md) — Workarounds and things to watch out for
 
 
 ---
