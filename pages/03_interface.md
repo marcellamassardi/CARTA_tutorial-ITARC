@@ -21,7 +21,7 @@ The default CARTA interface is composed of several key panels and tools:
 - **xy profiles**
 
 ![Initial interface](../images/basic_interface.png)
-*Figure: Illustration of CARTA initial interface corresponding to the "default layout"
+*Figure: Illustration of CARTA initial interface corresponding to the "default layout"*
 ---
 
 ## 🧰 Menu and Toolbar
@@ -33,7 +33,7 @@ The drop down menu has 4 buttons
 - **Help**: access manual and support links
 
 ![Menu](../images/menu.png)
-*Figure: Illustration of CARTA menu drop down content
+*Figure: Illustration of CARTA menu drop down content*
 
 The toolbar provides a quick access to some actions also accessible through the drop down menu. 
 By hooverig over the icons the name of the corresponding widget and a two lines manual on how to use it appears.
@@ -43,7 +43,7 @@ Icons are grouped into 3 blocks:
 - **View and plotting overlay tools**: including the link to the header view and to the plotting tool available also with the "View menu"
 
 ![Toolbar](../images/toolbar.png)
-*Figure: Illustration of CARTA toolbar scheme and Icons
+*Figure: Illustration of CARTA toolbar scheme and Icons*
 
 ---
 

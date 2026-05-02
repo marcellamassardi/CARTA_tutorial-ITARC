@@ -18,135 +18,104 @@ Images can be loaded into CARTA from local or remote file systems.
 - Use the **File Browser** panel
 - Navigate to your data directory
 - Select a file (e.g., FITS image or cube)
-- Click **Open**
+- Click **Load selected**
 
-### Result
-- The image is displayed in the active viewer (frame)
-- It appears in the **File List / Layer Panel**
+![File Browser](../images/file_browser.png)
+
+
+For each FITS image the header is loaded.
+Multiple images can be simultaneously loaded.
+In case separate I,Q,U,V images of the same region needs to be loaded for Stokes analysis they must be selected simultaneously and "Load as hypercube".
+In case separate images of the same region should be used as different layers of RGB images they must be selected simultaneously and "Load with RGB blending".
+
+
+The loaded image/Hipercube is displayed in the active viewer (frame), and appears in the File List Panel.
+Note that for an hypercube only one image appears loaded, but divverent layers (e.g. Stokes) can be reached through the Animator Panel.
+
+
+![File Browser](../images/hypercube_opening.png)
 
 ---
 
 ## ➕ Appending Images
 
-Appending allows you to load additional images without replacing the current one.
+Appending allows you to load additional images without replacing the current ones ("load image" closes the currently open ones).
 
 ### How to Append
+- From the File menu select the Append Image item 
 - Select another file in the File Browser
-- Click **Append** instead of Open
+- Click **Append** 
 
-### Result
-- The new image is added to the session
-- It can be displayed in the same or a different frame
-- Useful for comparisons and overlays
+The new image is added to the session. It is displayed in a different frame. Frames and images can be navigated through the image viewer top right toolbar, or through the Image List panel.
 
 ---
 
-## 🧩 Displaying Images in Different Frames
+## 🔗 The Image List panel
 
-CARTA supports multiple viewer panels (frames).
 
-### Creating a New Frame
-- Add a new viewer panel from the layout controls  
-- Or split the existing view
+![File Browser](../images/image_list.png)
 
-### Assigning Images to Frames
-- Drag and drop an image from the **File List** into a frame  
-- Or select the frame and choose the image to display  
+The image list panel shows the list of appended images. They can be selected to become "active" (the active image is listed in boldface). 
 
-### Benefits
-- Side-by-side comparison  
-- Multi-wavelength analysis  
-- Viewing different channels of a cube  
-
----
-
-## 🔗 Spatial Matching (Image Alignment)
-
-When working with multiple images, CARTA can align them spatially.
-
-### How to Enable Spatial Matching
-- Activate **linked views** or **spatial matching** from the interface  
-- Ensure images have valid WCS (World Coordinate System) information  
-
-### What Happens
-- Images align based on sky coordinates  
-- Panning and zooming are synchronized  
-- Cursor positions correspond across frames  
-
-### Use Cases
-- Comparing observations from different telescopes  
-- Multi-frequency or multi-epoch studies  
-
----
-
-## 📊 Overlay and Comparison
-
-Images can be overlaid for enhanced analysis.
-
-### Options
-- Display one image as a raster and another as **contours**  
-- Adjust transparency and color maps  
-- Toggle visibility from the **Layer Panel**
+By right-clicking on the image name we can select the image as reference (either spatially, spectrally or rendering). The corresponding letter (XY, Z or R) is framed in the matching column.
+By clicking on "XY" in the matching column of a non-reference image, it get spatially matched in the viewer to the spatial reference image. Similarly cubes can be aligned spectrally or in rendering (by clicking on the Z or R).
 
 ---
 
 ## 💾 Exporting and Saving Images
 
-CARTA allows exporting full images or selected regions.
-
----
-
-### 🧾 Export as FITS
-
-### How to Export
-- Select the desired image or region  
-- Use the export/save option in the interface  
-- Choose **FITS format**
-
-### Features
-- Preserves scientific data and metadata  
-- Can export:
-  - Entire image  
-  - Subregions  
-  - Selected channels from cubes  
+CARTA allows exporting full images or selected regions in png.
+For Local mode deployment only it is possible to save full images or selected regions in FITS or CASA format.
 
 ---
 
 ### 🖼️ Export as PNG
 
-### How to Export
-- Select the current view or region  
-- Choose **PNG format**
-
-### Features
-- Saves a visual representation  
-- Includes applied colormap and scaling  
-- Ideal for presentations and publications  
+Exporting as PNG allows to save the image as it appears in the image viewer panel saving the visual representation, including applied colormap and scaling. This is the option to chose for presentations and publications.  
+- Select the File menu -> Export Image 
+- Selecte the resolution quality
+- The image is saved in your client browser download folder
 
 ---
 
-### ✂️ Exporting Regions (Subimages)
+### Save as FITS/CASA
 
-- Define a region using region tools  
-- Export only that portion of the image  
-- Works for both FITS and PNG formats  
+- Select the File menu -> Save Image browser 
+- Select the desired image or region  
+- decide the destination folder and the file name
+- decide the output format between FITS or CASA
+
+Saving FITS file preserves scientific data and metadata. Saving allows the definition of regions and/or channels from cubes.  
 
 ---
 
-## ❌ Closing Images and Frames
+## ❌ Closing Images 
 
-### Closing an Image
-- Remove it from the **File List / Layer Panel**  
-- This unloads the data from the session  
+An image can be closed from the session
+- closing it by right-clicking it from the **File List Panel** (this allows also to "Close All" the images or just "Close the other" images, keeping open only the selected one) 
+- closing it from the File menu -> Close image item  
 
-### Closing a Frame
-- Close or remove the viewer panel  
-- Does not delete the image, only the view  
+---
 
-### Notes
-- Multiple frames can display the same image  
-- Closing a frame does not affect other frames  
+## Channel maps
+A channel map view is a powerful visualization tool used in radio astronomy to explore spectral data within an image cube. The channel map view displays the individual channels sequentially or side-by-side, allowing astronomers to trace the spatial distribution and motion of emitting gas across different velocities. 
 
+The control can be opened either in the top right image viewer toolbar or using the corresponging icon/button in the widget lists or toolbar. It is possible to define the range of plotted channels and the frames grid sizes.
+
+![Channel maps](../images/channel_maps.png)
+
+---
+## Multi-color Image blending
+The multi-color image blending feature in CARTA allows users to visualize multiple images simultaneously by blending them together in the color space. The blending is done by assigning different colors to each image and then combining them to create a composite image.
+
+Unlike the conventional RGB blending, which uses red, green, and blue channels, CARTA allows for more color channels (>= 2) and more flexible color assignments (monocolor maps or usual colormaps).
+
+Comparison is perforemed at screen rendering pixel level, which removes the limitations of the conventional RGB blending, such as the requirement for images to have the same pixel size and image size.
+
+Colors can be customized using the Render Configuration Widget that can be loaded via the FIle menu->Multi-Color blending.
+
+![Blending](../images/multi_blending.png)
+*Figure: Blending of a P (cyan) and I (magenta) image of an AGN.
 ---
 
 ## 🧠 Best Practices
@@ -158,15 +127,6 @@ CARTA allows exporting full images or selected regions.
 
 ---
 
-## 📌 Summary
-
-CARTA’s image management system allows users to:
-
-- 📂 Open and append multiple datasets  
-- 🧩 Organize images across multiple frames  
-- 🔗 Align images spatially using WCS  
-- 💾 Export data in scientific (FITS) or visual (PNG) formats  
-- ❌ Efficiently close and manage resources  
 
 This flexibility makes CARTA a powerful tool for handling complex astronomical datasets.
 

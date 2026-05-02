@@ -79,6 +79,7 @@ CARTA supports a range of astronomical data formats, including:
 - **FITS images and cubes**
 - **CASA image formats** (via backend support)
 - **HDF5 format** using the IDIA schema 
+- **MIRIAD images and cubes**
 
 {: .tip}
 CARTA also provides a command-line tool called fits2idia to convert FITS images into the required HDF5-IDIA format)
