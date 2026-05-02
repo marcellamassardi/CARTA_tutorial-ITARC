@@ -63,6 +63,8 @@ Images can be edited and saved in png or FITS formats. Note that saving in FITS 
 - No network dependency
 - Fast access to local files
 - Ideal for development, testing, and classroom use
+
+  
 ---
 
 ## 🌐 Server Mode
