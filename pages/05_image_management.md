@@ -123,6 +123,7 @@ Colors can be customized using the Render Configuration Widget that can be loade
 ![Blending](../images/multi_blending.png)
 
 *Figure: Blending of a P (cyan) and I (magenta) image of an AGN.
+
 ---
 
 ## 🧠 Best Practices
