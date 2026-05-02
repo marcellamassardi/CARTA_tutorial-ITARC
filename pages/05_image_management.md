@@ -35,6 +35,7 @@ Note that for an hypercube only one image appears loaded, but divverent layers (
 
 ![Open hypercube](../images/hypercube_opening.png)
 
+
 ---
 
 ## ➕ Appending Images
@@ -120,9 +121,8 @@ Comparison is perforemed at screen rendering pixel level, which removes the limi
 
 Colors can be customized using the Render Configuration Widget that can be loaded via the FIle menu->Multi-Color blending.
 
-![Blending](../images/multi_blending.png)
-
-*Figure: Blending of a P (cyan) and I (magenta) image of an AGN.
+![Multi-Blending](../images/multi-blending.png)
+*Figure: Blending of a P (cyan) and I (magenta) image of an AGN.*
 
 ---
 
