@@ -14,7 +14,7 @@ This tutorial walks you through the basic things to know to use CARTA for image 
 ## Contents
 
 1. [Introduction](pages/01_introduction.md) — Overview of CARTA
-2. [Before you start](pages/02_before_you_start.md) — What you need before access CARTA
+2. [Before you start](02_before_you_start.md) — What you need before access CARTA
 3. [Interface](pages/03_interface.md) — Navigating the CARTA interface
 4. [Layouts and preferences](pages/04_layouts.md) — Layouts and preferences for widgets
 5. [Image management](pages/05_image_management.md) — >Image management: open, append, close, save
