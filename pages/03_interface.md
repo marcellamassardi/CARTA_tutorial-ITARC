@@ -58,6 +58,10 @@ A toolbar on the top right of the panel helps managing the various frames. In pa
 
 ![Image preferences](../images/image_preferences.png)
 
+{: .tip}
+Through the "image preferences gear button" it is possible to change the coordinate system showed in the axes. 
+Through the "File-> preferences-> WCS and Image Overlay" menu it is possible to set sexagesima or degrees coordinate format.
+
 A toolbar on the bottom right of each frame allows quick action on the active image.
 A grey bar on the top part of the image frame includes the coordinates (including Stokes and channel information) and value of the cursor position in the active frame.
 

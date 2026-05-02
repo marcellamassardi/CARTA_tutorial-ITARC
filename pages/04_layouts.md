@@ -4,10 +4,9 @@ title: Setting Layouts and Preferences
 nav_order: 1
 ---
 
-```md id="carta-layouts-preferences"
 # 🧩 CARTA Viewer Layouts & Preferences
 
-The **CARTA Viewer** offers a flexible and customizable interface that adapts to different analysis workflows. Users can choose from predefined layouts or create their own, while fine-tuning behavior and appearance through an extensive **Preferences** system.
+The CARTA Viewer offers a flexible and customizable interface that adapts to different analysis workflows. Users can choose from predefined layouts or create their own, while fine-tuning behavior and appearance through an extensive **Preferences** system.
 
 ---
 
@@ -25,155 +24,46 @@ CARTA uses a **dockable panel system**, allowing users to arrange components dyn
 
 ## 📐 Common Layout Configurations
 
-While fully customizable, several common layouts are widely used:
+Several common layouts are made available through the layout item in the View menu, in addition to the Default interface [see Meeting the interface →](03_interface.md):
 
-### 🖼️ 1. Single-View Layout
-- One main image viewer
-- Minimal panels visible
+![Layouts example](../images/layouts.png)
 
-**Best for:**
-- Quick inspection of images  
-- Simple navigation tasks  
+To load an existing layout select and apply it in the View -> Layout menu.
 
----
+![Layouts example](../images/layout_management.png)
 
-### 🧪 2. Analysis Layout
-- Image viewer + spectral profile + statistics panel
-- Region panel visible
+Users can open, resize, move, overlap, and set visualization options for each panel.
+The resulting layout can be saved by adding a name for it in the dedicated tag of the View -> Layout menu.
+They will be added immediately to the same menu among the loadable layouts.
 
-**Best for:**
-- Spectral cube exploration  
-- Region-based measurements  
-- Interactive analysis  
+Default, cube view and analysis and continuum analysis cannot be modified or canceled.
+Customized layouts can be modified or canceled by clicking on the relative buttons of the View -> Layout menu.
 
----
-
-### 🔍 3. Multi-Panel / Comparison Layout
-- Multiple image viewers side-by-side or stacked
-- Linked cursor and zoom
-
-**Best for:**
-- Comparing different datasets  
-- Multi-wavelength analysis  
-- Inspecting different channels or resolutions  
-
----
-
-### 📊 4. Advanced Workspace Layout
-- Multiple viewers + plots + region tools + file list
-- Fully populated workspace
-
-**Best for:**
-- Complex workflows  
-- Power users handling large datasets  
-- Simultaneous visualization and analysis  
-
----
-
-### 🔗 Linked Views
-
-In multi-panel layouts, CARTA allows:
-
-- **Synchronized zooming and panning**
-- **Shared cursor position**
-- **Coordinated channel selection (for cubes)**
-
-This ensures consistent comparison across panels.
-
----
-
-## 💾 Saving and Managing Layouts
-
-Users can:
-
-- Save custom layouts for reuse  
-- Switch between layouts quickly  
-- Reset to default configurations  
-
-This is particularly useful when switching between tasks (e.g., visualization vs analysis).
+Custom layout files are saved in JSON format within your home directory on the server (either users are using CARTA in Server or Local mode), specifically under ~/.carta/config/layouts
 
 ---
 
 ## ⚙️ Preferences in CARTA
 
 The **Preferences** panel allows users to control the behavior and appearance of the viewer.
+The panel can be opened through the File menu "Preferences" item, or clicking on the magnifying lens icon in the toolbar. 
+As a JSON file, the preferences file is kept in ~/.carta/config/preferences.json and will be loaded automatically the next time you will open CARTA.
 
----
+Details on all the possible preferences that can be set are on [the CARTA guide](https://carta.readthedocs.io/en/latest/preferences.html#). 
 
-## 🎨 Appearance Settings
 
-Customize the visual style of the interface:
+![Preferences](../images/preferences.png)
 
-- Light / dark theme  
-- UI scaling and font sizes  
-- Panel appearance and layout behavior  
-
----
-
-## 🖥️ Rendering & Performance
-
-Adjust how CARTA handles data and rendering:
-
-- GPU acceleration options  
-- Image rendering quality  
-- Tile cache behavior  
-- Performance tuning for large datasets  
-
----
-
-## 📍 Coordinate & Display Settings
-
-Control how spatial and spectral information is shown:
-
-- Coordinate systems (e.g., celestial, pixel)  
-- Units (degrees, arcseconds, velocity, frequency)  
-- Grid and axis display  
-- Cursor information format  
-
----
-
-## 🎨 Image Display Defaults
-
-Set default visualization parameters:
-
-- Colormap selection  
-- Scaling (linear, logarithmic, etc.)  
-- Default contrast levels  
-- Contour settings  
-
----
-
-## 🧪 Region & Analysis Settings
-
-Configure behavior of analysis tools:
-
-- Default region styles  
-- Region statistics options  
-- Spectral extraction preferences  
-
----
-
-## 🔔 Interaction & Controls
-
-Customize how users interact with the interface:
-
-- Mouse and keyboard shortcuts  
-- Zoom and pan sensitivity  
-- Selection behavior  
-
----
-
-## 🌐 Data & File Handling
-
-Control how CARTA manages data:
-
-- Default file directories  
-- Auto-loading behavior  
-- Remote data access settings  
+The preferences panel collects the setting of appearance parameters of the various panels. Most of the settings are also available through the specific widgets/plotting tool.
 
 ---
 
 ## 💡 Why Layouts & Preferences Matter
+
+CARTA’s layout and preferences system provides a highly adaptable interface:
+
+- 🧩 **Layouts** → organize tools and views for specific tasks  
+- ⚙️ **Preferences** → fine-tune behavior, performance, and appearance  
 
 The combination of flexible layouts and customizable preferences allows CARTA to:
 
@@ -181,19 +71,5 @@ The combination of flexible layouts and customizable preferences allows CARTA to
 - Improve efficiency and usability  
 - Provide a personalized working environment  
 - Scale from beginner to expert use  
-
----
-
-## 📌 Summary
-
-CARTA’s layout and preferences system provides a highly adaptable interface:
-
-- 🧩 **Layouts** → organize tools and views for specific tasks  
-- ⚙️ **Preferences** → fine-tune behavior, performance, and appearance  
-
-Together, they enable users to build an efficient and tailored environment for exploring and analyzing astronomical data.
-```
-
-
 
 [← Previous: Meeting the interface](03_interface.md) [Next: Image management→](05_image_management.md)
