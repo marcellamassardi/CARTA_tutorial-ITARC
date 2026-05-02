@@ -64,7 +64,7 @@ Images can be edited and saved in png or FITS formats. Note that saving in FITS 
 - Fast access to local files
 - Ideal for development, testing, and classroom use
 
-  
+
 ---
 
 ## 🌐 Server Mode
@@ -101,7 +101,6 @@ See [the ItARC-cluster webpage](https://arc.ira.inaf.it/support-and-tools/arc-cl
 
 - follow the instruction on the same link to access the cluster
 
-{: .code}
 > ssh -X -P 22 <your_account>@scheduler.ira.inaf.it
 > ssh -X <your_account>@almabl<blade_number>.ira.inaf.it
 
@@ -109,14 +108,14 @@ Blades available to users are numbers 07, 08 and 13. Up to date table of availab
 
 This will point you to the /homes/<your_account> folder on the IRA repository.
 Change your operation directory
-{: .code}
+
 >cd /iranet/groups/arc/homesarc/<your_account> 
+
 to your folder on the ARC cluster: this is the folder where you should put your image files (see details on [the ItARC-cluster webpage](https://arc.ira.inaf.it/support-and-tools/arc-cluster/)).
 
-{: .code}
->irainit load carta
->carta
-[2026-05-02 10:03:52.979Z] [CARTA] [info] CARTA is accessible at http://192.168.49.26:3002/?token=af2e643f-c265-450f-8889-c11595890e2c
+>>irainit load carta
+>>carta
+>[2026-05-02 10:03:52.979Z] [CARTA] [info] CARTA is accessible at http://192.168.49.26:3002/?token=af2e643f-c265-450f-8889-c11595890e2c
 
 gives you the URL that you can open in your browser to access CARTA.
 Notice that CARTA will search images in the IRA repository folder. We suggest to move and operates on the ARC cluster folder, as described above.
@@ -134,6 +133,7 @@ CARTA can be used in combination with data from the ALMA Science Archive, enabli
 - Access the CARTA interactive interface by clicking the FITS / images of interest 
 
 This is extremely useful if you have storage problems as you do not need to download images.
+
 {: .important}
 Remember that images in the ALMA Science Archive are **NOT intended to be ready for science**, also if in most of the cases they are extremely good. For ALMA cycles 2,3, and 4 we strongly recommend to use ARI-L images if available. In any case verify that the images are of suitable quality for your purposes or reproduce them by following the instruction in the ALMA Science Archive manual. 
 
