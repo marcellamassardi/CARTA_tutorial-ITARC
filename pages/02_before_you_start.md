@@ -1,33 +1,36 @@
 ---
 layout: default
-title: Choose the way to access CARTA
+title: How to access CARTA?
 nav_order: 1
 ---
 
-# 🚀 Choose the way to access CARTA 
+# 🚀 How to access CARTA?
 
 CARTA is fundamentally a web application and utilizes a client-server architecture. The main components are:
 
-- a backend server: focuses on computations of image data for visualization on the client side. It typically run on a powerful server or cluster with high-speed storage where users’ data reside.
-- a frontend client:  receives the data from the server side and utilizes web technologies to render the data for users. It also serves as the graphical user interface (GUI) for users to interact with the CARTA application.
+- a **backend server**: focuses on computations of image data for visualization on the client side. It typically run on a powerful server or cluster with high-speed storage where users’ data reside.
+- a **frontend client**:  receives the data from the server side and utilizes web technologies to render the data for users. It also serves as the graphical user interface (GUI) for users to interact with the CARTA application.
 
 Ad additional controller handles the lifetime of the backend process and user login authentication in case of Institutional deployment.
 
 From a user point of view, the CARTA Viewer can be used in different deployment modes depending on the reciprocal position of backend and frontend: 
-- **local/desktop mode** when both client and server are on the same machine 
-- **server-based mode**, when the server located where the data reside and the client connecting to it through a browser.
+- **Local/Desktop mode** when both client and server are on the same machine 
+- **Server-based mode**, when the server located where the data reside and the client connecting to it through a browser.
 This flexibility allows users to work efficiently with both small and extremely large astronomical datasets.
 
 The supported operating systems for the server (for CARTA v5.1) are:
 - Ubuntu Linux: 22.04 LTS (Jammy Jellyfish) and 24.04 LTS (Noble Numbat)
 - Red Hat Enterprise Linux / AlmaLinux / Rocky Linux: 8, 9
 - macOS: 14 (Sonoma), and 15 (Sequoia). Earlier version of macOS may work but they are not tested.
-- even if not officially supported it is possible to use CARTA through the Windows Subsystem for Linux 2 (WSL2), with Ubuntu being the recommended Linux distribution.
+- even if not officially supported, it is possible to use CARTA through the Windows Subsystem for Linux 2 (WSL2), with Ubuntu being the recommended Linux distribution.
 
-while the client only needs
+The client only needs
 -  access to a CARTA backend server (local or remote)
 -  a modern web browser (Chrome, Firefox, Edge are recommended)
+
+
 ---
+
 
 ## Which mode works better for me?
 
@@ -133,4 +136,4 @@ This is extremely useful if you have storage problems as you do not need to down
 Remember that images in the ALMA Science Archive are **NOT intended to be ready for science**, also if in most of the cases they are extremely good. For ALMA cycles 2,3, and 4 we strongly recommend to use ARI-L images if available. In any case verify that the images are of suitable quality for your purposes or reproduce them by following the instruction in the ALMA Science Archive manual. 
 
 
-[← Previous: Introduction](01_introduction.md) [Next: Meeting the interface →](03_interface.md)
+[← Previous: What is CARTA?](01_introduction.md) [Next: Meeting the interface →](03_interface.md)
