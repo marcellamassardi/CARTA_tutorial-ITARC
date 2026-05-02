@@ -33,7 +33,7 @@ The loaded image/Hipercube is displayed in the active viewer (frame), and appear
 Note that for an hypercube only one image appears loaded, but divverent layers (e.g. Stokes) can be reached through the Animator Panel.
 
 
-![File Browser](../images/hypercube_opening.png)
+![Open hypercube](../images/hypercube_opening.png)
 
 ---
 
