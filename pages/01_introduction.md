@@ -126,15 +126,3 @@ These resources include:
 
 [Next: before to start →](02_before_to_start.md)
 
-
-
-✨ Key Features
-
-    High-performance visualization of large astronomical datasets
-    Interactive image exploration (zoom, pan, rotate)
-    Multi-dimensional data cube support
-    Region creation and analysis tools
-    Spectral profile visualization
-    Customizable layouts and linked views
-    Real-time rendering with GPU acceleration (when available)
-
