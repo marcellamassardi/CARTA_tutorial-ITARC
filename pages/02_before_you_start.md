@@ -1,66 +1,54 @@
 ---
 layout: default
-title: PAGE UNDER CONSTRUCTION
+title: Choose the way to access CARTA
 nav_order: 1
 ---
 
-## 🚀 Getting Started with CARTA
+### 🚀 Getting Started with CARTA 
 
-The CARTA Viewer can be used in different deployment modes depending on the user’s needs: a **local/desktop mode**, a **server-based mode**, or through direct integration with external data archives such as the **ALMA Science Archive**. This flexibility allows users to work efficiently with both small and extremely large astronomical datasets.
+CARTA is fundamentally a web application and utilizes a client-server architecture. There are three main components:
 
-## Prerequisites
+- a server: focuses on computations of image data for visualization on the client side. It typically run on a powerful server or cluster with high-speed storage where users’ data reside.
+- a client:  receives the data from the server side and utilizes web technologies to render the data for users. It also serves as the graphical user interface (GUI) for users to interact with the CARTA application.
+- a controller: handles the lifetime of the backend process and user login authentication (used only for Institutional deployment).
 
--  A modern web browser (Chrome, Firefox, Edge recommended)
--  Access to a CARTA backend server (local or remote)
+From a user point of view, the CARTA Viewer can be used in different deployment modes depending on the reciprocal position of backend and frontend: a **local/desktop mode** when both client and server are on the same machine a **server-based mode**, when the server located where the data reside and the client connecting to it through a browser. This flexibility allows users to work efficiently with both small and extremely large astronomical datasets.
 
+The supported operating systems for the server (for CARTA v5.1) are:
+- Ubuntu Linux: 22.04 LTS (Jammy Jellyfish) and 24.04 LTS (Noble Numbat)
+- Red Hat Enterprise Linux / AlmaLinux / Rocky Linux: 8, 9
+- macOS: 14 (Sonoma), and 15 (Sequoia). Earlier version of macOS may work but they are not tested.
 
-## Persistence
-- **Persistent State**: When using the CARTA server version (e.g., via the ALMA Archive), a carta-controller uses a MongoDB database on the remote server to record user data, including interface preferences, layout configurations, and workspaces.
-- **Regions**: Regions created for analysis are registered on the server and shared among spatially matched images.
-- **Session Information**: The backend (carta_backend) handles computations and stores data for visualization, ensuring that if you are connected to a shared server, your session data (regions/stats) remains available.
+While the client needs
+-  a modern web browser (Chrome, Firefox, Edge are recommended)
+-  access to a CARTA backend server (local or remote)
 
-## Data Independence & Local Usage
-- **Independence**: When an image is unmatched from the spatial reference, it receives an independent copy of the regions, which can then be managed separately.
-- **Local/Desktop Mode**: If CARTA is run locally on your own computer, this session data is saved to a local directory instead of a remote server.
-- **Exporting Data**: Users can export regions to text files in CASA Region Text Format (.crtf) or DS9 (.reg) format.
+### Which mode works for me?
 
-## Key Takeaways for Privacy
-- **Multi-user Servers**: In a shared environment, your regions and session stats are stored on that server's backend.
-- **ALMA/Archive Usage**: If utilizing CARTA via remote archives (e.g., ALMA/ESO), your session and created regions are part of that remote session, not local, unless explicitly exported
+## 🖥️ Local / Desktop Mode
 
----
+In **local mode**, CARTA runs entirely on a personal machine:
+To operate in local mode the CARTA backend is available for Linux, macOS, and containerized environments
 
-## 💾 Downloading CARTA
-
-CARTA does not require a traditional installation in the browser, but the backend application must be installed or accessed depending on the chosen workflow.
-
-### 🔧 Backend Download
-
-The CARTA backend is available for Linux, macOS, and containerized environments:
+Installation resources are available here:
 
 - Official releases and binaries:  
   https://cartavis.org/docs/backend/installation/
-
 - GitHub repository:  
   https://github.com/CARTAvis/carta
 
 Precompiled binaries and Docker images are commonly provided to simplify deployment.
 
----
-
-## 🖥️ Local / Desktop Mode
-
-In **local mode**, CARTA runs entirely on a personal machine:
-## How it works
+# How it works
 - The CARTA backend is launched locally.
 - The browser connects to `localhost`.
 - Data files are read directly from the local filesystem.
 
-### Typical workflow
-> bash carta_backend
-Then open [http://localhost:3000](http://localhost:3000) in your web browser.
+If CARTA is run locally on your own computer, the session data is saved to a local directory instead of a remote server. 
+Users can export regions to text files in CASA Region Text Format (.crtf) or DS9 (.reg) format.
+Images can be edited and saved in png or FITS formats.
 
-### Advantages
+# Advantages
 - Simple setup for small to medium datasets
 - No network dependency
 - Fast access to local files
@@ -69,23 +57,37 @@ Then open [http://localhost:3000](http://localhost:3000) in your web browser.
 
 ## 🌐 Server Mode
 
-In server mode, CARTA is deployed on a remote machine (e.g., cluster, institute server, or cloud environment):
+In server mode, CARTA is deployed on a remote machine (e.g., cluster, institute server, or cloud environment) and made accessible trhough an URL that can be opened from the client browser.
 
 ### How it works
 - The backend runs on a remote server.
 - Users connect via a web browser.
 - Data remains on the server, avoiding large transfers.
 
-### Typical workflow
-- Start backend on remote system
+When using the CARTA server version (e.g., via the ALMA Archive), a carta-controller uses a MongoDB database on the remote server to record user data, including interface preferences, layout configurations, and workspaces.
+The backend (carta_backend) handles computations and stores data for visualization, ensuring that if you are connected to a shared server, your session data (regions/stats) remains available. Regions created for analysis are registered on the server and shared among spatially matched images.
 
-Access via URL such as: https://your-server-address:port
-
-### Advantages
+# Advantages
 - Handles very large datasets efficiently
 - Centralized data storage
-Suitable for multi-user environments
-- Ideal for HPC clusters and institutional deployments
+- Suitable for multi-user environments
+- Ideal for HPC clusters and institutional deployments (may need a controller for accounting and resource-sharing)
+
+## 🔭 Example: accessing CARTA on the Italian ARC cluster
+- Request an account to the Italian ARC node writing an email to help-desk@alma.inaf.it (this will give you a minimum of 10TB of space for 6 months with access to our computing blades. See https://arc.ira.inaf.it/support-and-tools/arc-cluster/ for more information.)
+
+
+>cd /iranet/groups/arc/homesarc/<your_account> 
+
+brings you to your folder on the ARC cluster: this is the folder where you should put your image files (see below).
+
+{: .code}
+>irainit load carta
+>carta
+[2026-05-02 10:03:52.979Z] [CARTA] [info] CARTA is accessible at http://192.168.49.26:3002/?token=af2e643f-c265-450f-8889-c11595890e2c
+
+gives an URL that you can copy in your browser (t)
+
 
 
 ## 🔭 Example: using CARTA with the ALMA Science Archive
@@ -108,9 +110,10 @@ Download or access the FITS / image products associated with observations
 
 CARTA supports multiple workflows:
 
-🖥️ Local mode → quick setup, local file access
-🌐 Server mode → scalable, remote, multi-user analysis
-🔭 ALMA Archive workflow → direct exploration of real observational data
+- 🖥️ Local mode → quick setup, local file access
+- 🌐 Server mode → scalable, remote, multi-user analysis
+- 🔭 ALMA Archive workflow → direct exploration of real observational data
 
 This flexibility makes CARTA a powerful tool for both individual researchers and large scientific collaborations working with modern astronomical datasets.
 
+[← Previous: Introduction](01_introduction.md) [Next: Meeting the interface →](03_interface.md)
