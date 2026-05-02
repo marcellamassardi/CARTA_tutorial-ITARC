@@ -64,8 +64,16 @@ This separation enables scalable workflows and efficient handling of large datas
 
 ![The client-server scheme for CARTA](../images/browser-server.png)
 
+*Figure: Illustration of the CARTA browser–server architecture. User interactions in the browser (e.g., pan, zoom, and analysis requests) are sent to the backend server, which processes the data, generates image tiles and analysis results, and streams them back for real-time, GPU-accelerated rendering in the client.*
+
+## ⚡ GPU-Accelerated Rendering in CARTA
+
+CARTA minimizes data transfer and offloads heavy rendering tasks to the GPU, allowing high-performance visualization directly in the browser.
 
 
+![GPU Rendering Diagram](../images/tile_rendering.png)
+
+*Figure: Illustration of CARTA’s tiled rendering workflow. Large astronomical images are preprocessed into multi-resolution tile pyramids on the server. Based on the user’s viewport (pan/zoom level), only the necessary tiles and resolution levels are requested and streamed to the client. These tiles are uploaded as textures to the GPU and composited in real time, enabling smooth, high-performance interaction with massive datasets while minimizing data transfer.*
 ---
 
 ## 📂 Supported Data
