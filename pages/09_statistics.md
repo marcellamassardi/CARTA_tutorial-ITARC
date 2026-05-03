@@ -3,6 +3,8 @@ layout: default
 title: Statistics widget
 nav_order: 1
 ---
+PAGE UNDER CONSTRUCTION
+
 
 # 📊 Statistics Widget in CARTA
 
