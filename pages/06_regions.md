@@ -4,8 +4,7 @@ title: How to define Regions
 nav_order: 1
 ---
 
-```md id="carta-regions"
-# 📍 Regions in CARTA: Definition, Import, and Export
+# Regions Definition, Import, and Export
 
 Regions are a core feature of the **CARTA Viewer**, allowing users to define areas of interest on astronomical images for visualization, measurement, and analysis. CARTA provides a variety of region types and flexible tools to create, edit, import, and export them.
 

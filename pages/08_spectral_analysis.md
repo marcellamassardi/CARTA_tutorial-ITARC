@@ -3,7 +3,12 @@ layout: default
 title: What you need for Spectral analysis
 nav_order: 1
 ---
-```md id="carta-spectral-analysis"
+![Spectral analysis](../images/spectral_analysis.png)
+
+![Profile smoothing](../images/profile_smoothing.png)
+
+![Fake lines smoothing](../images/fake_lines.png)
+
 # 📊 Spectral Cube Analysis in CARTA
 
 The **CARTA Viewer** provides a rich set of tools for exploring and analyzing **FITS spectral cubes**, enabling users to study spatial and spectral dimensions simultaneously. These features are particularly useful for radio and millimeter astronomy datasets (e.g., ALMA).
