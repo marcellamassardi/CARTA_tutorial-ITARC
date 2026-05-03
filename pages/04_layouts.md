@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Setting Layouts and Preferences
+title: Layouts and Preferences
 nav_order: 1
 ---
 
