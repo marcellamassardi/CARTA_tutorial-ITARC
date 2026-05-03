@@ -13,152 +13,50 @@ Regions are a core feature of the **CARTA Viewer**, allowing users to define are
 
 ## ✏️ Defining Regions
 
-Regions can be created interactively using the **toolbar**.
+Regions can be created interactively using the **toolbar**
 
-### How to Create a Region
-1. Select a region tool from the toolbar  
-2. Click and drag on the image viewer  
-3. Adjust the shape using control handles  
+![Region Toolbar](../images/regions_toolbar.png)
 
-### Interactive Features
-- Resize, rotate, and move regions  
-- Snap to coordinates (if enabled)  
-- Modify properties (color, label, line style)  
+-Select the shape (single pixel, line, rectangle, circle, polygonal, polyline, annotation)
+-Drag and draw 
 
-Regions are immediately active and linked to analysis tools such as statistics and spectral profiles.
+For polylines or polygons 
+- define control points with left-click, double click to finish.
+- double click on control points to delete them
+- click on single points and move them
 
----
+Regions are immediately active and linked to analysis tools such as statistics and spectral profiles. Results update in real time when regions are moved or resized  
 
-## 🔷 Types of Regions
+Notice that a polyline cannot become a polygon: when you estimate values on polylines they are calculated on the pixels along the line, when you use polygon they are stimated within the area of the polygon.
 
-CARTA supports several geometric region shapes:
 
-### ⭕ Circle
-- Defined by center and radius  
-- Useful for compact sources  
+The list name and properties are added to the Region List Panel.
 
----
+{: .tip}
+Spatial matching to a reference image (by clicking the XY in the matching column of the Image list panel) allows the overlay of regions over all the matched images.
 
-### ◻️ Rectangle
-- Defined by width and height  
-- Can be rotated  
-- Ideal for structured regions or cutouts  
 
----
+## 📥 Region List Panel
 
-### 🔶 Ellipse
-- Defined by major/minor axes and orientation  
-- Suitable for extended sources  
+![Region Toolbar](../images/regions.png)
 
----
+The list of drawn regions is in the Region List Panel
+The panel allows to:
+- lock a region
+- center the image viewer to a region
+- export a region
+- import more regions
+- delete regions (for a single region just select it and Canc, for all the regions use the dust bin button on the bottom right of the panel)
 
-### 🔺 Polygon
-- Defined by multiple vertices  
-- Highly flexible for irregular shapes  
+![Region List](../images/regions.png)
 
 ---
 
-### 📏 Line / Polyline
-- Defined by two or more points  
-- Used for profile extraction or slices  
+## 📥 Importing and Exporting Regions
 
----
+CARTA allows importing or exporting regions in ds9 or CTRF format .
+Regions can be imported and exported through the Region List panel or via the dedicated buttons in the File menu.
 
-### 🎯 Point
-- Single coordinate location  
-- Useful for marking positions  
-
----
-
-## 🧾 Region Properties
-
-Each region includes metadata and customizable properties:
-
-- Name / label  
-- Color and style  
-- Coordinate system (pixel or world coordinates)  
-- Locked/unlocked state  
-
----
-
-## 📥 Importing Regions
-
-CARTA allows importing region definitions created externally.
-
-### Supported Formats
-- Common astronomy region formats (e.g., DS9 region files)
-
-### How to Import
-- Use the **Region Panel** or menu  
-- Select a region file from your system  
-
-### Result
-- Regions are overlaid on the image  
-- Automatically aligned using WCS (if available)  
-
----
-
-## 📤 Exporting Regions
-
-Regions can be saved for reuse or sharing.
-
-### How to Export
-- Select one or more regions  
-- Use the export/save option  
-
-### Output
-- Region definition files (e.g., DS9 format)  
-- Preserves geometry, position, and properties  
-
----
-
-## 🔗 Regions and Analysis
-
-Regions are tightly integrated with CARTA’s analysis tools.
-
-### Capabilities
-- Compute statistics (mean, RMS, sum, etc.)  
-- Extract spectral profiles from cubes  
-- Compare multiple regions simultaneously  
-
-### Dynamic Updates
-- Results update in real time when regions are moved or resized  
-
----
-
-## 🧩 Managing Multiple Regions
-
-CARTA supports working with many regions at once.
-
-### Features
-- List of all regions in the **Region Panel**  
-- Toggle visibility  
-- Group and organize regions  
-- Delete or duplicate regions  
-
----
-
-## 💡 Best Practices
-
-- Use **simple shapes** (circle, rectangle) for quick analysis  
-- Use **polygons** for complex structures  
-- Import regions to **reuse previous work**  
-- Export regions to **share results or ensure reproducibility**  
-
----
-
-## 📌 Summary
-
-CARTA’s region system allows users to:
-
-- ✏️ Define regions interactively  
-- 🔷 Use a variety of geometric shapes  
-- 📥 Import regions from external tools  
-- 📤 Export regions for reuse and sharing  
-- 📊 Perform real-time analysis within selected areas  
-
-Regions are essential for extracting meaningful scientific information from astronomical images and data cubes.
-```
 
 
 [← Previous: Image Management](05_image_management.md) [Next: Guide on plotting Tools →](07_tools.md)
