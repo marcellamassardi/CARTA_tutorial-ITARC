@@ -37,7 +37,6 @@ Spatial matching to a reference image (by clicking the XY in the matching column
 
 ## 📥 Region List Panel
 
-![Region Toolbar](../images/regions.png)
 
 The list of drawn regions is in the Region List Panel
 The panel allows to:
