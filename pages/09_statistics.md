@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Survival manual on the Statistics widget
+title: Statistics widget
 nav_order: 1
 ---
 

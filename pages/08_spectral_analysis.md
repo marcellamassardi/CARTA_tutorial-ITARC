@@ -1,6 +1,6 @@
 ---
 layout: default
-title: What you need for Spectral analysis
+title: Basic Spectral analysis
 nav_order: 1
 ---
 ![Spectral analysis](../images/spectral_analysis.png)
