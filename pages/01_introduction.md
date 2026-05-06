@@ -6,41 +6,42 @@ nav_order: 1
 
 # What is CARTA and why should I use it?
 
-The **CARTA Viewer** (Cube Analysis and Rendering Tool for Astronomy) is a powerful, web-based application for visualizing and analyzing astronomical data. Designed with performance and usability in mind, CARTA enables astronomers to interact seamlessly with large datasets from facilities such as **ALMA (Atacama Large Millimeter/submillimeter Array)** and many other observatories. It provides high-performance rendering and interactive tools tailored for radio astronomy and beyond.
+The **CARTA Viewer (Cube Analysis and Rendering Tool for Astronomy) is a powerful, web-based application for visualizing and analyzing astronomical data**. Designed with performance and usability in mind, CARTA enables astronomers to interact seamlessly with large astronomical datasets. It provides high-performance rendering and interactive tools tailored for radio astronomy and beyond.
 
 CARTA is a next-generation image viewer that runs in your web browser while leveraging a backend server for data access and processing. This architecture allows users to work efficiently with large FITS images and multi-dimensional data cubes without needing to download them locally.
 
-It is particularly well-suited for radio and millimeter/submillimeter astronomy, where datasets can be extremely large and complex. It has in fact been designed for ALMA, VLA, and SKA pathfinders, but could be used for a broad range of applications. 
+It separates the frontend (user interface) from backend services, enabling scalable and remote workflows.
 
-CARTA is built to replace legacy desktop tools with a responsive, browser-accessible interface that can handle large FITS images and data cubes efficiently. It separates the frontend (user interface) from backend services, enabling scalable and remote workflows.
+It is therefore, particularly well-suited for radio and millimeter/submillimeter astronomy, where datasets can be extremely large and complex. It has in fact been designed for ALMA, VLA, and SKA pathfinders, but could be used for a broad range of applications. 
 
 
 ## Key Features
 
-- **⚡ High Performance with Large Data Cubes**  
-  CARTA streams data dynamically, allowing smooth interaction even with massive datasets.
-
-- **🧭 Responsive Navigation**  
-  Instantly pan, zoom, and explore regions of interest without lag, making it easy to move through high-resolution images.
-
-- **📊 Real-Time Spectral Analysis**  
-  Extract and visualize spectra from data cubes interactively, ideal for multi-channel observations.
-
-- **🎯 Region-Based Statistics**  
-  Define regions and immediately compute statistics, helping with source identification and analysis.
-
-- **🔗 Linked Views and Multi-Panel Layouts**  
-  Compare multiple images or datasets side-by-side, useful for multi-configuration or multi-wavelength studies.
+- **🖥️ Platform Independence**  
+  Run CARTA in any modern browser—no complex installation required for the frontend.
 
 - **🌐 Remote Data Access**  
   Work directly on data stored on servers or clusters without transferring large files to your local machine.
 
-- **🖥️ Platform Independence**  
-  Run CARTA in any modern browser—no complex installation required for the frontend.
+- **⚡ High Performance with Large Data Cubes**  
+  CARTA streams data dynamically, allowing smooth interaction even with massive datasets.
+
+- **🔗 Linked Views and Multi-Panel Layouts**  
+  Compare multiple images or datasets side-by-side, useful for multi-configuration or multi-wavelength studies.
+
+- **🧭 Responsive Navigation**  
+  Instantly pan, zoom, and explore regions of interest without lag, making it easy to move through high-resolution images.
+
+- **🎯 Region-Based Statistics**  
+  Define regions and immediately compute statistics, helping with source identification and analysis.
+
+- **📊 Real-Time Spectral Analysis**  
+  Extract and visualize spectra from data cubes interactively, ideal for multi-channel observations.
 
 - **✨ CPUs Parallelization in data processing** Process fast and responsive analysis even for complex and high-volume astronomical images or source catalogues.  
 
 - **✨ Real-time rendering with GPU acceleration** (when available) load 1TB of image size with 1GB of ram in seconds 
+
 
 ---
 
@@ -62,9 +63,9 @@ This separation enables scalable workflows and efficient handling of large datas
 
 ## ⚡ GPU-Accelerated Rendering and CPU-Parallelization 
 
-CARTA achieves real-time rendering by streaming only the required portions of image data from the backend to the browser and using GPU-accelerated techniques to dynamically update the display as the user pans, zooms, or analyzes the dataset. In this way, CARTA minimizes data transfer and offloads heavy rendering tasks to the GPU, allowing high-performance visualization directly in the browser.
+**CARTA achieves real-time rendering by streaming only the required portions of image data** from the backend to the browser and using GPU-accelerated techniques to dynamically update the display as the user pans, zooms, or analyzes the dataset. In this way, CARTA minimizes data transfer and offloads heavy rendering tasks to the GPU, allowing high-performance visualization directly in the browser.
 
-Furthermore, CARTA leverages CPU parallelization to efficiently process large datasets and source catalogues by distributing computations across multiple cores, ensuring fast and responsive analysis even for complex and high-volume astronomical data.
+Furthermore, **CARTA leverages CPU parallelization** to efficiently process large datasets and source catalogues by distributing computations across multiple cores, ensuring fast and responsive analysis even for complex and high-volume astronomical data.
 
 ![GPU Rendering Diagram](../images/tile_rendering.png)
 
@@ -88,7 +89,7 @@ This makes it suitable for data from:
 
 - ALMA  
 - VLA
-- ATCA new BIGCAT correlator  
+- ATCA (also the new BIGCAT correlator)
 - MeerKAT  
 - SKA precursors and pathfinders  
 - Optical and infrared observatories  
