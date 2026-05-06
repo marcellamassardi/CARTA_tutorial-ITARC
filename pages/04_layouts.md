@@ -12,7 +12,7 @@ The CARTA Viewer offers a flexible and customizable interface that adapts to dif
 
 ## 🧱 Layout System in CARTA
 
-CARTA uses a **dockable panel system**, allowing users to arrange components dynamically.
+**CARTA uses a dockable panel system, allowing users to arrange components dynamically.**
 
 ### Key Characteristics
 - Panels can be **moved, resized, docked, or detached**
