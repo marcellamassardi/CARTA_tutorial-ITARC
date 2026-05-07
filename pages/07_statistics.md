@@ -41,14 +41,10 @@ Below are the main quantities provided by CARTA, along with their definitions.
 
 - Number of Pixels (NumPixels): Total number of pixels in the selected region.
 - Sum: Total sum of pixel values in Jy/beam. 
-\[
-\text{Sum} = \sum_{i=1}^{N} x_i
-\]
+$\text{Sum} = \sum_{i=1}^{N} x_i $
 - Flux density: Total flux in Jy. 
 - Mean (Average) :Average pixel value in Jy/beam
-\[
-\mu = \frac{1}{N} \sum_{i=1}^{N} x_i
-\]
+$ \mu = \frac{1}{N} \sum_{i=1}^{N} x_i $
 - Minimum and Maximum: min max pixel values in Jy/beam 
 \[
 \text{Min} = \min(x_i), \quad \text{Max} = \max(x_i)
@@ -75,7 +71,7 @@ For an resolved source the FluxDensity item of the widget provide the Integrated
 
 {: .tip}
 For radio astronomical images to estimate the noise in an image it is enough to consider the RMS over a region far from the signal (i.e. channels without lines AND far from the emitting sources). For best practice it is recommended to measure the noise values over more than one region and average them.
-For each region you can transform the RMS in Jy/beam to Jy by multiplying it for the number of pixels within a beam: You can either draw a region as big as the synthesized beam or take the "Restoring Beam" sizes and "Pixel increment" 
+For each region you can transform the RMS in Jy/beam to Jy by multiplying it for the number of pixels within a beam: you can either draw a region as big as the synthesized beam or take the "Restoring Beam" sizes and "Pixel increment" 
 from the file informations of the open or append file browsers, calculate the areas of Beam and pixels and multiply the RMS for their ratio: RMS[Jy]=RMS[Jy/beam]*Beam_area/Pixel_Area
 
 

@@ -19,27 +19,29 @@ A **spectral profile** shows intensity as a function of frequency or velocity fo
 2. Select a region (or click on a pixel)  
 3. Open the **Spectral Profile Widget**  
 
-### Features
-- Displays flux vs. channel / frequency / velocity  
-- Updates dynamically when:
-  - Moving the cursor  
-  - Modifying regions  
-- Supports multiple regions simultaneously  
+In the display it is possible to change the visualization unit (frequency/velocity), reference frame, and frequency.
+It updates dynamically when the user moves the cursor or modifies the regions  
+By hoovering over the profile it is possible to change the visualized channel.
 
----
+The profile can be zoomed in by selecting a portion of it, and zoomed out double clicking on any region to get back to the original.
 
-## 🎚️ Navigating Channels
+It is possible to export the profile as a png image or in a 2 column text file by clicking the dedicated buttons on the bottom right of the widget panel.
 
-Spectral cubes contain multiple channels corresponding to different frequencies or velocities.
+![Spectral profile](../images/spectral_analysis.png)
 
-### Navigation Methods
-- **Channel slider** → move through channels interactively  
-- **Keyboard shortcuts** → step forward/backward  
-- **Animation / playback** → scan through channels automatically  
 
-### Additional Options
-- Change axis units (frequency, velocity, channel index)  
-- Synchronize channels across multiple frames  
+## Smoothing
+The profile appears as an hystogram per channel. It is possible to rebin or apply smoothing algorithms to the profile to enhance the line profile wrt the noise. To set and/or modify the profile binning it is enough to open the "Smoothing" panel on the top right of the toolbar of the "spectral profile" widget and set the parameter to the desired smoothing method and its styling details. Note that "smoothing" is just one of the windows os the spectral profile settings (i.e. the gear button for this widget).
+
+![Spectral profile](../images/profile_smoothing.png)
+
+{: .note}
+Note that the smoothing affects only the profile view, NOT the cube rendering or binning in channels.
+
+{: .important}
+Avoid eccessive profile smoothing because it can seriously alterate your line profile, or, even worst, identify lines where no line is present, in particular if there is any feature due to noise pattern. There is no way to avoid this: Only experience distinguishes the probability of a real or a fake line.
+
+![Spectral profile](../images/fake_lines.png)
 
 ---
 
@@ -47,30 +49,23 @@ Spectral cubes contain multiple channels corresponding to different frequencies 
 
 Moment maps summarize spectral information along the spectral axis.
 
-### Common Moments
+The most common moments to be generated are:
+- Moment 0 (Integrated Intensity): Represents total emission along the spectral axis  
+- Moment 1 (Velocity Field): Intensity-weighted mean velocity  
+- Moment 2 (Velocity Dispersion): Measures line width or spread  
 
-#### Moment 0 (Integrated Intensity)
-- Represents total emission along the spectral axis  
+To Generate Moment Maps:
+- open the "moments" panel on the top right of the toolbar of the "spectral profile" widget (also "moments" is just one of the windows os the spectral profile settings i.e. the gear button for this widget)
+- decide the region or the whole map for which the moment is needed
+- select the range in frequency or velocity where the line is and the pixel values to be included in the evaluation or not.
 
-#### Moment 1 (Velocity Field)
-- Intensity-weighted mean velocity  
+As the moments generator operates considering the pixel values over the selected region it is important to help the system to focus on regions of high signal to noise, setting a threshold of at least 3 sigma, select only the channels/frequencies/velocities and pixels whose values is clearly above the threshold. 
+To do so it is also possible to select the line profile region via the dedicated button in the intervals, and hoovering of the profile to define the ranges.
 
-#### Moment 2 (Velocity Dispersion)
-- Measures line width or spread  
+Finally select the moments (more than one can be listed with spaces or commas as separators) to be generated among those available:
+![moment menu](../images/moment_menu.png)
 
----
-
-### How to Generate Moment Maps
-1. Select the cube in the **File List**  
-2. Open the **Moment Map Generator**  
-3. Choose:
-   - Moment order (0, 1, 2, etc.)  
-   - Channel or velocity range  
-4. Generate the map  
-
-### Output
-- New image layer displayed in CARTA  
-- Can be analyzed like any other image  
+The generator produces the FITS images of the requested moments, opens and adds them to the image list and they can be displayed, customized, and saved/exported as any other image.
 
 ---
 
@@ -78,20 +73,23 @@ Moment maps summarize spectral information along the spectral axis.
 
 CARTA allows fitting analytical models to spectral profiles.
 
-### How to Fit
-1. Select a region or pixel  
-2. Open the **Spectral Fitting Tool**  
-3. Choose a model (e.g., Gaussian)  
-4. Adjust initial parameters  
-5. Run the fit  
+![Line fitting](../images/line_fitting_2.png)
 
-### Features
-- Fit one or multiple components  
-- Visual overlay of fit on the spectrum  
-- Extract parameters such as:
-  - Peak intensity  
-  - Central velocity  
-  - Line width  
+To Generate Moment Maps:
+- open the "fitting" panel on the top left of the toolbar of the "spectral profile" widget (also "fitting" is just one of the windows os the spectral profile settings i.e. the gear button for this widget)
+- decide the region or the whole map for which the moment is needed
+- select the line shape among Gaussian or Lorentzian
+- give hints to the fit (number of components, their center, whidth and amplitude): this can be done automatically selecting the dedicated button and choosing on the profile panel the region where each component is expected. 
+- run the fit
+
+The fitting curve is generated and overplotted to the spectral profile for each components.
+A log containing the parameters of each component and can be viewed in the fitting panel and saved in a txt file.
+
+![Line fitting log](../images/fit_log.png)
+
+{: .tip}
+The more precise are the input parameters for the components, the better will be the fit, but caveat not to force the presence of components where there is no evidence of them.
+
 
 ---
 
@@ -99,59 +97,15 @@ CARTA allows fitting analytical models to spectral profiles.
 
 PV diagrams show intensity as a function of position and velocity.
 
-### How to Create a PV Diagram
-1. Draw a **line or polyline region** across the image  
-2. Open the **PV Diagram Tool**  
-3. Generate the diagram  
+To generate them 
+- trace a linear region to indicate the segment of "position" for which you want the "velocity" to be plotted.
+- open the PVplot generator widget
+- set the region and the range of frequency where the line is found
+- run the widget
 
-### Features
-- Displays a 2D map: position vs. velocity  
-- Adjustable slice width  
-- Supports curved paths (polylines)  
-- Useful for studying kinematics (e.g., rotation, outflows)  
+![Line fitting log](../images/)
 
----
-
-## 🔗 Linking Spatial and Spectral Analysis
-
-All tools in CARTA are interconnected:
-
-- Moving regions updates spectra in real time  
-- Changing channels updates displayed images  
-- PV diagrams and moment maps are linked to the original cube  
-
----
-
-## ⚡ Performance Advantages
-
-- Real-time interaction with large spectral cubes  
-- GPU-accelerated rendering  
-- Efficient data streaming (only required channels/tiles)  
-
----
-
-## 💡 Best Practices
-
-- Use **regions** to reduce noise in spectral profiles  
-- Limit channel ranges when computing moment maps  
-- Fit spectral lines after smoothing if needed  
-- Use PV diagrams to explore velocity structures along specific directions  
-
----
-
-## 📌 Summary
-
-CARTA provides powerful tools for spectral cube analysis:
-
-- 📈 Interactive spectral profiles  
-- 🎚️ Flexible channel navigation  
-- 🧮 Moment map generation (0, 1, 2)  
-- 📉 Spectral line fitting  
-- 📐 PV diagram visualization  
-
-These features enable detailed exploration of the physical and kinematic properties of astronomical sources directly within the viewer.
-```
-
-
+The generator displays a 2D map: position vs. velocity. 
+Once a PV image is generated, it will be loaded and displayed in the Image Viewer. It is named with an additional _pv string in the original input file name. The generated PV image is kept in RAM per session, and if there is a new request for PV image generation, the old PV image will be deleted first. If you want to regenerate a PV image but keep the old one, you can enable the “Keep previous PV image(s)” toggle. Optionally, a calculated PV image can be exported in CASA or FITS format via “File” -> “Save Image”  
 
 [← Previous: Guide on plotting Tools](07_tools.md) [Next: Survival manual on the Statistics widget →](09_statistics.md)
