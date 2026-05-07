@@ -47,10 +47,6 @@ CO(6-5): https://almascience.eso.org/dataPortal/member.uid___A001_X2de_X28.ari_l
 
 continuum: https://almascience.eso.org/dataPortal/member.uid___A001_X2de_X28.ari_l.SDP9_sci.spw0_1_2_3_259998MHz.12m.cont.I.pbcor.fits
 
-- **NGC5135** projID 2013.1.00243.S (PI. Colina) ALMA Band 6 data (see alsoSabatini et al. 2017)
+This tutorial also uses some images from the **SHORES 2.1 GHz ATCA Survey** for an AGN target (courtesy of the SHORES collaboration, see also Massardi et al. 2025, Behiri et al. 2026 and Galluzzi et al. in preparation)
 
-CO(2-1)https://almascience.eso.org/dataPortal/member.uid___A001_X122_X48c.ari_l.NGC_5135_sci.spw0_227408MHz.12m.mfs.I.pbcor.fits
-
-continuum: https://almascience.eso.org/dataPortal/member.uid___A001_X122_X48c.ari_l.NGC_5135_sci.spw0_1_2_234511MHz.12m.cont.I.pbcor.fits
-
-This tutorial also uses some images from the SHORES 2.1 GHz ATCA survey for an AGN target (courtesy of the SHORES collaboration, see also Massardi et al. 2025, Behiri et al. 2026 and Galluzzi et al. in preparation)
+Useful files can be downloaded from the drive https://drive.google.com/drive/folders/13hIK4j3OcXc_kJvO--uVNGkBeYkEL1V5?usp=sharing
