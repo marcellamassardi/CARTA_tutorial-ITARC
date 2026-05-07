@@ -19,9 +19,9 @@ This tutorial walks you through the basic things to know to use CARTA for image 
 4. [Layouts and preferences](pages/04_layouts.md) — Setting Layouts and preferences for widgets
 5. [Image management](pages/05_image_management.md) — Image management: open, append, match, save, close
 6. [How to define Regions](pages/06_regions.md) — Defining, saving and restoring regions
-7. [Statistics widget](pages/09_statistics.md) — Extracting values out of CARTA 
-8. [Guide on plotting Tools](pages/07_tools.md) — Overlaying contours, vectors, and catalogues 
-9. [Basic Spectral analysis](pages/08_spectral_analysis.md) — Spectral line analysis, moments, and PV plots
+7. [Statistics widget](pages/07_statistics.md) — Extracting values out of CARTA 
+8. [Guide on plotting Tools](pages/08_tools.md) — Overlaying contours, vectors, and catalogues 
+9. [Basic Spectral analysis](pages/09_spectral_analysis.md) — Spectral line analysis, moments, and PV plots
 
 
 
