@@ -55,6 +55,7 @@ Below are the main quantities provided by CARTA, along with their definitions.
   (x<sub>i</sub> − μ)<sup>2</sup>
 )
 </span>
+
 - Sum of Squares (SumSq)
 <span>∑ x<sub>i</sub><sup>2</sup></span>
 
