@@ -84,6 +84,32 @@ The backend (carta_backend) handles computations and stores data for visualizati
 - Ideal for HPC clusters and institutional deployments (may need a controller for accounting and resource-sharing)
 
 ---
+## 🔭 Example: accessing CARTA Locally on your machine (LinuX-MacOS)
+
+- Go to: https://cartavis.org/
+- click on "installation"
+     
+	OR	
+     
+- Go direcly to: https://cartavis.org/#download
+
+	THEN
+
+- click on stand-alone application
+- select your operating system (linux or mac)
+- select your achitecture and download the appimage
+
+To run CARTA APPIMAGE:
+Complete instructions here:
+https://carta.readthedocs.io/en/latest/installation_and_configuration.html#how-to-run-carta
+
+- Open a terminal, and go to the directory where you installed carta
+- untar the CARTA package ($ tar-xvf carta.AppImage.x86_64.tgz)
+- make the app-image file executable: ($ chmod +x carta-x86_64.AppImage)
+- run the appimage file ($ ./carta-x86_64.AppImage)
+
+--- 
+
 
 ## 🔭 Example: accessing CARTA on the Italian ARC cluster
 
@@ -97,7 +123,8 @@ See [the ItARC-cluster webpage](https://arc.ira.inaf.it/support-and-tools/arc-cl
 
 - Request an account to the Italian ARC node writing an email to help-desk@alma.inaf.it
 
-- follow the instructions on [the ItARC-cluster webpage](https://arc.ira.inaf.it/support-and-tools/arc-cluster/) to install a VPN GUI and launch it on your machine
+- follow the instructions on [the ItARC-cluster webpage](https://arc.ira.inaf.it/support-and-tools/arc-cluster/) 
+ (in case of Windows access you may need anso to install a VPN GUI and launch it on your machine and access through an X-term emulator)
 
 - follow the instruction on the same link to access the cluster
 
@@ -106,12 +133,6 @@ See [the ItARC-cluster webpage](https://arc.ira.inaf.it/support-and-tools/arc-cl
 
 Blades available to users are numbers 07, 08 and 13. Up to date table of availability are on [the ItARC-cluster webpage](https://arc.ira.inaf.it/support-and-tools/arc-cluster/)
 
-This will point you to the /homes/<your_account> folder on the IRA repository.
-Change your operation directory
-
->cd /iranet/groups/arc/homesarc/<your_account> 
-
-to your folder on the ARC cluster: this is the folder where you should put your image files (see details on [the ItARC-cluster webpage](https://arc.ira.inaf.it/support-and-tools/arc-cluster/)).
 
 >irainit load carta
 >
@@ -120,7 +141,11 @@ to your folder on the ARC cluster: this is the folder where you should put your 
 >[2026-05-02 10:03:52.979Z] [CARTA] [info] CARTA is accessible at http://192.168.49.26:3002/?token=af2e643f-c265-450f-8889-c11595890e2c
 
 gives you the URL that you can open in your can copy and paste to your browser to access CARTA.
-Notice that CARTA will initially search images in the IRA repository folder. We suggest to move and operates on the ARC cluster folder, as described above.
+
+{: .tip}
+CARTA will initially search images in your IRA repository folder /homes/<your_account> .
+Change your operation directory to /iranet/groups/arc/homesarc/<your_account>  folder on the ARC cluster: this is the folder where you should put your image files (see details on [the ItARC-cluster webpage](https://arc.ira.inaf.it/support-and-tools/arc-cluster/)).
+
 
 ---
 

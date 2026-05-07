@@ -41,22 +41,23 @@ Below are the main quantities provided by CARTA, along with their definitions.
 
 - Number of Pixels (NumPixels): Total number of pixels in the selected region.
 - Sum: Total sum of pixel values in Jy/beam. 
-$\text{Sum} = \sum_{i=1}^{N} x_i $
+<span>Sum = ∑<sub>i=1</sub><sup>N</sup> x<sub>i</sub></span>
 - Flux density: Total flux in Jy. 
 - Mean (Average) :Average pixel value in Jy/beam
-$ \mu = \frac{1}{N} \sum_{i=1}^{N} x_i $
+<span>μ = (1 / N) ∑<sub>i=1</sub><sup>N</sup> x<sub>i</sub></span>
 - Minimum and Maximum: min max pixel values in Jy/beam 
-\[
-\text{Min} = \min(x_i), \quad \text{Max} = \max(x_i)
-\]
+<span>Min = min(x<sub>i</sub>), &nbsp;&nbsp; Max = max(x<sub>i</sub>)</span>
 - Standard Deviation (RMS): This is the determination of noise in a region free of signal in Jy/beam
-\[
-\sigma = \sqrt{ \frac{1}{N} \sum_{i=1}^{N} (x_i - \mu)^2 }
-\]
+<span>
+σ = √(
+  (1 / N)
+  ∑<sub>i=1</sub><sup>N</sup>
+  (x<sub>i</sub> − μ)<sup>2</sup>
+)
+</span>
 - Sum of Squares (SumSq)
-\[
-\sum x_i^2
-\]
+<span>∑ x<sub>i</sub><sup>2</sup></span>
+
 
 ![Flux Density](../images/fluxdensity.png)
 
