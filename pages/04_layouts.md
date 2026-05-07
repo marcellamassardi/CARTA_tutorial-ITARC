@@ -72,4 +72,4 @@ The combination of flexible layouts and customizable preferences allows CARTA to
 - Provide a personalized working environment  
 - Scale from beginner to expert use  
 
-[← Previous: Meeting the interface](03_interface.md) [Next: Image management→](05_image_management.md)
+[← Previous: Meeting the interface](03_interface.md)   -   [Next: Image management→](05_image_management.md)

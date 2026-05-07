@@ -78,4 +78,4 @@ from the file informations of the open or append file browsers, calculate the ar
 
 
 
-[← Previous: What you need for Spectral analysis ](08_spectral_analysis.md) [Next: Tips and Tricks →](10_tips.md)
+[← Previous: What you need for Spectral analysis ](08_spectral_analysis.md)   -   [Next: Tips and Tricks →](10_tips.md)

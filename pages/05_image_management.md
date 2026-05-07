@@ -159,4 +159,4 @@ Save often your workspace, as it is a great way to recover your job in case of n
 
 This flexibility makes CARTA a powerful tool for handling complex astronomical datasets.
 
-[← Previous: Setting Layouts and Preferences](04_layouts.md) [Next: How to define Regions →](06_regions.md)
+[← Previous: Setting Layouts and Preferences](04_layouts.md)   -   [Next: How to define Regions →](06_regions.md)

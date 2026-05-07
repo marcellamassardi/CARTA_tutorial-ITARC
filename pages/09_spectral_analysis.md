@@ -59,6 +59,7 @@ To Generate Moment Maps:
 - decide the region or the whole map for which the moment is needed
 - select the range in frequency or velocity where the line is and the pixel values to be included in the evaluation or not.
 
+
 As the moments generator operates considering the pixel values over the selected region it is important to help the system to focus on regions of high signal to noise, setting a threshold of at least 3 sigma, select only the channels/frequencies/velocities and pixels whose values is clearly above the threshold. 
 To do so it is also possible to select the line profile region via the dedicated button in the intervals, and hoovering of the profile to define the ranges.
 
@@ -66,6 +67,8 @@ Finally select the moments (more than one can be listed with spaces or commas as
 ![moment menu](../images/moment_menu.png)
 
 The generator produces the FITS images of the requested moments, opens and adds them to the image list and they can be displayed, customized, and saved/exported as any other image.
+
+![Moments maps](../images/momenti_3.png)
 
 ---
 
@@ -103,9 +106,9 @@ To generate them
 - set the region and the range of frequency where the line is found
 - run the widget
 
-![Line fitting log](../images/)
+![PV plot](../images/pvplot.png)
 
 The generator displays a 2D map: position vs. velocity. 
 Once a PV image is generated, it will be loaded and displayed in the Image Viewer. It is named with an additional _pv string in the original input file name. The generated PV image is kept in RAM per session, and if there is a new request for PV image generation, the old PV image will be deleted first. If you want to regenerate a PV image but keep the old one, you can enable the “Keep previous PV image(s)” toggle. Optionally, a calculated PV image can be exported in CASA or FITS format via “File” -> “Save Image”  
 
-[← Previous: Guide on plotting Tools](07_tools.md) [Next: Survival manual on the Statistics widget →](09_statistics.md)
+[← Previous: Guide on plotting Tools](07_tools.md)   -   [Next: Survival manual on the Statistics widget →](09_statistics.md)

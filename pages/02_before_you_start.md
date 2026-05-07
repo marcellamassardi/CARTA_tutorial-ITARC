@@ -139,4 +139,4 @@ This is extremely useful if you have storage problems as you do not need to down
 {: .important}
 Remember that images in the ALMA Science Archive are **NOT intended to be ready for science**, also if in most of the cases they are extremely good. For ALMA cycles 2,3, and 4 we strongly recommend to use ARI-L images if available. In any case verify that the images are of suitable quality for your purposes or reproduce them by following the instruction in the ALMA Science Archive manual. 
 
-[← Previous: What is CARTA?](01_introduction.md) [Next: Meeting the interface →](03_interface.md)
+[← Previous: What is CARTA?](01_introduction.md)   -   [Next: Meeting the interface →](03_interface.md)
