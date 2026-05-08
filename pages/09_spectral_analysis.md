@@ -111,4 +111,4 @@ To generate them
 The generator displays a 2D map: position vs. velocity. 
 Once a PV image is generated, it will be loaded and displayed in the Image Viewer. It is named with an additional _pv string in the original input file name. The generated PV image is kept in RAM per session, and if there is a new request for PV image generation, the old PV image will be deleted first. If you want to regenerate a PV image but keep the old one, you can enable the “Keep previous PV image(s)” toggle. Optionally, a calculated PV image can be exported in CASA or FITS format via “File” -> “Save Image”  
 
-[← Previous: Guide on plotting Tools](07_tools.md)   -   [Next: Survival manual on the Statistics widget →](09_statistics.md)
+[← Previous: Basics of statistics →](07_statistics.md)  

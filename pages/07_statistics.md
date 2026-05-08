@@ -55,7 +55,6 @@ Below are the main quantities provided by CARTA, along with their definitions.
   (x<sub>i</sub> − μ)<sup>2</sup>
 )
 </span>
-
 - Sum of Squares (SumSq)
 <span>∑ x<sub>i</sub><sup>2</sup></span>
 
@@ -80,4 +79,4 @@ from the file informations of the open or append file browsers, calculate the ar
 
 
 
-[← Previous: What you need for Spectral analysis ](08_spectral_analysis.md)   -   [Next: Tips and Tricks →](10_tips.md)
+[← Previous: How to define Regions →](06_regions.md)  -   [Next: Guide on plotting Tools](08_tools.md) 

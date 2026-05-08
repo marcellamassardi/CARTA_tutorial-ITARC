@@ -53,4 +53,4 @@ The panel allows to:
 CARTA allows importing or exporting regions in ds9 or CTRF format .
 Regions can be imported and exported through the Region List panel or via the dedicated buttons in the File menu.
 
-[← Previous: Image Management](05_image_management.md)   -   [Next: Guide on plotting Tools →](07_tools.md)
+[← Previous: Image Management](05_image_management.md)   -   [Next: Basics of statistics →](07_statistics.md)

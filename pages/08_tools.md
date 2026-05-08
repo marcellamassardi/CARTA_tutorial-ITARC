@@ -77,4 +77,4 @@ Fit can be refined by giving the retrieved components parameters as input for fo
 
 ---
 
-[← Previous: How to define Regions](06_regions.md)   -   [Next: What you need for Spectral analysis →](08_spectral_analysis.md)
+[← Previous: How to define Regions](07_regions.md)   -   [Next: What you need for Spectral analysis →](09_spectral_analysis.md)
