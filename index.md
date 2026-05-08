@@ -7,7 +7,7 @@ nav_order: 0
 # Lost in Space (But Make It Data): Navigating Images with CARTA
 
 
-![Logo](../images/Italian_ARC_RGB.png)
+![Logo](images/Italian_ARC_RGB.png)
 
 This is a basic tutorial on the CARTA image viewer [CARTA webpage](https://cartavis.org/) for the Italian community and users of the Italian ARC node.
 This tutorial walks you through the basic things to know to use CARTA for image management and scientific exploitation.
